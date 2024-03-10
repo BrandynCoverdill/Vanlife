@@ -8,4 +8,4 @@ The course is free and can be found [at this website](https://scrimba.com/learn/
 
 ## Live Preview
 
-Currently, there is no preview... yet.
+[Live Demo](https://brandyncoverdill-vanlife.netlify.app)
