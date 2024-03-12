@@ -1,9 +1,11 @@
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 export default function About() {
 	return (
 		<section className='about'>
-			<div className='background-image'></div>
+			<div className='dark-wrapper'>
+				<div className='background-image'></div>
+			</div>
 			<div className='text-content'>
 				<h1>Don't squeeze in a sedan when you could relax in a van.</h1>
 				<p>

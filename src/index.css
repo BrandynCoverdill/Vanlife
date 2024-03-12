@@ -13,6 +13,20 @@ body {
 	padding-inline-start: 1.5em;
 }
 
+.dark-wrapper {
+	background-color: rgb(46, 46, 46);
+	height: fit-content;
+	padding-block: 2em;
+	position: relative;
+}
+
+@media screen and (max-width: 775px) {
+	.dark-wrapper {
+		background-color: inherit;
+		padding-block: 0em;
+	}
+}
+
 /* Header styling */
 
 .header {
@@ -79,7 +93,6 @@ body {
 	margin: 0;
 	max-width: 775px;
 	margin: auto;
-	margin-block-start: 1em;
 }
 
 .home .container {
@@ -129,7 +142,6 @@ body {
 	background-position: center;
 	max-width: 775px;
 	margin: auto;
-	margin-top: 1em;
 }
 
 .about .text-content h1 {
@@ -146,6 +158,10 @@ body {
 
 .about .text-content p:nth-child(3) {
 	margin-block-end: 1.5em;
+}
+
+.about .text-content p {
+	margin-inline: 1em;
 }
 
 .about .text-content .card {
