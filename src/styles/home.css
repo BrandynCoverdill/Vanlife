@@ -1,0 +1,44 @@
+/* Home Styling */
+
+.home {
+	background-size: cover;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url('../assets/images/mountain-lake.png');
+	background-position: center top;
+	background-repeat: no-repeat;
+	margin: 0;
+	max-width: 775px;
+	margin: auto;
+}
+
+.home .container {
+	color: white;
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	padding-block: 5em;
+	padding-inline: 2em;
+}
+
+.home .container h1 {
+	margin: 0;
+}
+
+.home .container button {
+	background: rgb(232, 125, 37);
+	display: inline-block;
+	border: none;
+	cursor: pointer;
+	color: white;
+	font-weight: bold;
+	padding-block: 1em;
+	border-radius: 5px;
+	width: 100%;
+	font-size: 1.25em;
+}
+
+.home-button-container {
+	margin-block-start: 2em;
+	width: 100%;
+}
