@@ -1,7 +1,7 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import {BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 import Home from './Home';
 import About from './About';
-import Logo from './assets/images/logo.png';
+import Logo from '../assets/images/logo.png';
 
 function App() {
 	return (
