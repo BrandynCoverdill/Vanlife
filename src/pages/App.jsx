@@ -1,6 +1,7 @@
 import {BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 import Home from './Home';
 import About from './About';
+import Vans from './Vans';
 import Logo from '../assets/images/logo.png';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
 			<Routes>
 				<Route path='/' element={<Home />} />
 				<Route path='/about' element={<About />} />
+				<Route path='/vans' element={<Vans />} />
 			</Routes>
 			<section className='footer'>
 				<p>
