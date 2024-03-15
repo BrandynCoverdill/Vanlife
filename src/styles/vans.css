@@ -1,0 +1,90 @@
+.vans {
+	margin: 1em;
+}
+
+.vans .filter-container {
+	display: flex;
+	gap: 1em;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.vans .filter-container button {
+	padding-inline: 1.5em;
+	padding-block: 0.5em;
+	background-color: rgb(255, 233, 217);
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	letter-spacing: 1px;
+}
+
+.vans .filter-container .clear-filter-btn {
+	background-color: inherit;
+	text-decoration: underline;
+	color: rgb(60, 60, 60);
+}
+
+.van-list-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 1em;
+	margin-block-start: 1em;
+}
+
+.van-card {
+	margin-inline: 2em;
+}
+
+.van-card .van-image img {
+	max-width: 100%;
+	border-radius: 5px;
+}
+
+.van-card .van-title-price {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 0.5em;
+	max-height: 1.5em;
+}
+
+.van-card .van-title-price p {
+	font-weight: bold;
+}
+
+.van-card .van-title-price a {
+	text-decoration: none;
+	color: #000;
+	cursor: pointer;
+	font-size: 0.65em;
+}
+
+.van-card .van-type-day {
+	display: flex;
+	justify-content: space-between;
+}
+
+.van-card .van-type-day p:nth-of-type(2) {
+	vertical-align: top;
+	margin: 0;
+}
+
+.tag {
+	color: white;
+	padding-block: 0.25em;
+	padding-inline: 0.75em;
+	border-radius: 5px;
+}
+
+.simple-tag {
+	background-color: rgb(210, 112, 67);
+}
+
+.rugged-tag {
+	background-color: rgb(28, 108, 96);
+}
+
+.luxury-tag {
+	background-color: #000;
+}

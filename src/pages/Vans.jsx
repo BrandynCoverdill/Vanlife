@@ -1,7 +1,7 @@
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../styles/vans.css';
 import '.././server.js';
-import {useEffect, useState} from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Vans() {
 	const [vans, setVans] = useState(null);
@@ -44,9 +44,19 @@ export default function Vans() {
 						return (
 							<div className='van-card' key={van.id}>
 								<div className='van-image'>
-									<Link to={'/van:' + van.id}>
+									<Link to={'/van/' + van.id}>
 										<img src={van.imageUrl} alt={van.name} />
 									</Link>
+								</div>
+								<div className='van-title-price'>
+									<Link to={'/van/' + van.id}>
+										<h2>{van.name}</h2>
+									</Link>
+									<p>${van.price}</p>
+								</div>
+								<div className='van-type-day'>
+									<p className={'tag ' + van.type + '-tag'}>{van.type}</p>
+									<p>/day</p>
 								</div>
 							</div>
 						);
