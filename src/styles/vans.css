@@ -70,6 +70,10 @@
 	margin: 0;
 }
 
+.van-card .van-type-day p:nth-of-type(1) {
+	margin-block-start: 0;
+}
+
 .tag {
 	color: white;
 	padding-block: 0.25em;
