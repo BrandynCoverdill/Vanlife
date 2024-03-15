@@ -1,7 +1,24 @@
 import {Link} from 'react-router-dom';
 import '../styles/vans.css';
+import '.././server.js';
+import {useEffect, useState} from 'react';
 
 export default function Vans() {
+	const [vans, setVans] = useState(null);
+
+	useEffect(() => {
+		async function fetchData() {
+			const data = await fetch('/api/vans');
+			const json = await data.json();
+			setVans(json.vans);
+		}
+		try {
+			fetchData();
+		} catch (error) {
+			console.error('Error: ' + error);
+		}
+	}, []);
+
 	return (
 		<section className='vans'>
 			<h1>Explore our van options</h1>
@@ -20,7 +37,21 @@ export default function Vans() {
 				</button>
 			</div>
 			<div className='van-list-container'>
-				{/* Map over the data to show a list of vans */}
+				{vans === null ? (
+					<p>Loading Vans...</p>
+				) : (
+					vans.map((van) => {
+						return (
+							<div className='van-card' key={van.id}>
+								<div className='van-image'>
+									<Link to={'/van:' + van.id}>
+										<img src={van.imageUrl} alt={van.name} />
+									</Link>
+								</div>
+							</div>
+						);
+					})
+				)}
 			</div>
 		</section>
 	);
